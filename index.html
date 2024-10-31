@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <input type="text" id="text_1" />
+    <input type="text" id="text_2" />
+    <select id="options">
+      <option disabled selected>İşlem Seçiniz</option>
+      <option>+</option>
+      <option>-</option>
+      <option>x</option>
+      <option>/</option>
+    </select>
+    <button id="hesapla">İşlemi Hesapla</button>
+    <br />
+    Sonuc:
+    <label
+      id="answer"
+      style="
+        width: 30px;
+        height: 20px;
+        border: solid black 1px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-top: 10px;
+      "
+    ></label>
+    <div class="overlay" id="overlay"></div>
+    <div class="alert" id="alert">
+        <h2>Uyarı!</h2>
+        <p>Canlı Sunucudur, Bilgisayara Dokunmayın</p>
+        <!-- <button id="close">Tamam</button> -->
+    </div>
+
+    <button id="showAlert">Uyarıyı Göster</button>
+    <script src="./index.js"></script>
+  </body>
+</html>
